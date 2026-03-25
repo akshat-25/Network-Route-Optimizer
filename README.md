@@ -1,4 +1,4 @@
-# Network Route Optimizer API
+# Network Route Optimizer
  
 A FastAPI application that models a network of servers as a weighted graph and computes the shortest (lowest-latency) route between any two nodes using Dijkstra's algorithm. All queries are logged and can be retrieved through a history endpoint.
  
