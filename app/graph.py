@@ -3,7 +3,7 @@ from collections import defaultdict
 
 from sqlalchemy.orm import Session
 
-from models import EdgeDB
+from app.models import EdgeDB
 
 
 def build_adjacency_list(db: Session) -> dict[str, list[tuple[str, float]]]:
@@ -22,7 +22,7 @@ def dijkstra(
 ) -> tuple[float, list[str]] | None:
     """
     Return (total_latency, path) for the shortest path, or None if unreachable.
-    Uses Dijkstra's algorithm.
+    Uses Dijkstra's algorithm with a min-heap.
     """
     dist: dict[str, float] = {source: 0.0}
     prev: dict[str, str | None] = {source: None}
