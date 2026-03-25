@@ -10,7 +10,7 @@ A FastAPI application that models a network of servers as a weighted graph and c
 ## Project Structure
 
 ```
-python_exercise/
+Network Route Optimizer/
 ├── app/
 │   ├── __init__.py
 │   ├── main.py              # FastAPI app creation, router wiring, DB init
